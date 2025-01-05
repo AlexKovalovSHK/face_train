@@ -1,0 +1,7 @@
+services:
+  backend:
+    image: registry.gitlab.com/alex_shk_infos/test_start:latest
+    container_name: test_start
+    ports:
+      - "3005:3004"
+    command: "nginx -g 'daemon off;'"
